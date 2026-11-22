@@ -1,4 +1,16 @@
---EXEC bronze.load_bronze;
+/*
+	=================================================
+	Stored procedure: Bronze tables insertion
+	=================================================
+	This script inserts data from CRM and ERP files
+	into the bronze layer tables after truncating them
+	The procedure uses bulk insert to load the data.
+
+	Parameters: Do not accept any
+
+	Usage: EXEC bronze.load_bronze;
+	=================================================
+*/
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN

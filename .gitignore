@@ -1,12 +1,21 @@
-# Operating system
+# Ignore system-specific files
 .DS_Store
 Thumbs.db
-desktop.ini
 
-# IDE
-.idea/
-.vscode/
+# Ignore local configuration files
+*.env
 
-# Temporary files
-*.tmp
+# Ignore SQL Server-related files
+*.mdf
+*.ldf
+*.ndf
+
+# Ignore temporary or backup files
 *.log
+*.bak
+*.tmp
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
